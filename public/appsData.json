@@ -1,0 +1,362 @@
+[
+  {
+    "image": "/src/assets/demo-app (1).webp",
+    "title": "Forest: Focus For Productivity",
+    "companyName": "Forest Inc.",
+    "id": 1,
+    "description": "Forest helps you stay focused by planting virtual trees that grow as you avoid distractions. Track productivity, reduce phone usage, and develop a healthier work-study balance.",
+    "size": 50,
+    "reviews": 1200,
+    "ratingAvg": 4.8,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 70 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 750 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (2).webp",
+    "title": "SmPlan: ToDo List With Reminder",
+    "companyName": "SmPlan Inc.",
+    "id": 2,
+    "description": "SmPlan is a versatile ToDo list and reminder app that helps you manage tasks efficiently. Set reminders, organize priorities, and ensure you never miss an important task.",
+    "size": 40,
+    "reviews": 900,
+    "ratingAvg": 4.5,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 280 },
+      { "name": "5 star", "count": 500 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (3).webp",
+    "title": "FLIP - Focus Timer For Study",
+    "companyName": "FLIP Inc.",
+    "id": 3,
+    "description": "FLIP is a Pomodoro timer for focused study and work sessions. Break your tasks into intervals, monitor your progress, and increase productivity without burning out.",
+    "size": 35,
+    "reviews": 800,
+    "ratingAvg": 4.6,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 395 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (4).webp",
+    "title": "Pomocat - Cute Pomodoro Timer",
+    "companyName": "Pomocat Co.",
+    "id": 4,
+    "description": "Pomocat is a fun Pomodoro timer with adorable animations. Stay productive in a playful way and track your work and study sessions easily.",
+    "size": 30,
+    "reviews": 700,
+    "ratingAvg": 4.7,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 365 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (5).webp",
+    "title": "Time Planner: Schedule & Tasks",
+    "companyName": "Planner Apps",
+    "id": 5,
+    "description": "Time Planner helps you organize your day efficiently. Plan tasks, set reminders, and manage your workload to maximize productivity and minimize stress.",
+    "size": 45,
+    "reviews": 600,
+    "ratingAvg": 4.4,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 315 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (6).webp",
+    "title": "Morning Habits - Daily Routine",
+    "companyName": "Habit Co.",
+    "id": 6,
+    "description": "Morning Habits helps you build productive routines to start your day right. Track habits, set goals, and maintain consistency for long-term personal growth.",
+    "size": 38,
+    "reviews": 500,
+    "ratingAvg": 4.3,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 45 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 250 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (7).webp",
+    "title": "Focus Plant: Pomodoro Forest",
+    "companyName": "Focus Co.",
+    "id": 7,
+    "description": "Focus Plant gamifies your productivity by growing a virtual forest while you stay focused. Track focus sessions and minimize distractions with fun progress visuals.",
+    "size": 42,
+    "reviews": 550,
+    "ratingAvg": 4.5,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 18 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 280 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (8).webp",
+    "title": "Alarmy - Alarm Clock & Sleep",
+    "companyName": "Alarmy Inc.",
+    "id": 8,
+    "description": "Alarmy is a smart alarm clock that wakes you up effectively and improves your sleep schedule. Use creative wake-up challenges and track your sleep patterns.",
+    "size": 48,
+    "reviews": 650,
+    "ratingAvg": 4.6,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 315 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (9).webp",
+    "title": "Habit Tracker: Build Good Habits",
+    "companyName": "LifeApps",
+    "id": 9,
+    "description": "Habit Tracker helps you create, track, and maintain habits daily. Visualize progress and build routines that improve health, productivity, and personal growth.",
+    "size": 36,
+    "reviews": 450,
+    "ratingAvg": 4.4,
+    "downloads": 8500000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 215 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (10).webp",
+    "title": "Study Buddy: Focus & Timer",
+    "companyName": "EduApps",
+    "id": 10,
+    "description": "Study Buddy is a Pomodoro-based study timer that helps students stay focused, manage study sessions, and track academic productivity with reminders and statistics.",
+    "size": 33,
+    "reviews": 400,
+    "ratingAvg": 4.5,
+    "downloads": 7800000,
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 175 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (11).webp",
+    "title": "Focus Zen: Mindfulness & Focus",
+    "companyName": "ZenTech",
+    "id": 11,
+    "description": "Focus Zen combines mindfulness exercises with focus timers to boost concentration and reduce stress. Ideal for work, study, and meditation practices.",
+    "size": 40,
+    "reviews": 420,
+    "ratingAvg": 4.6,
+    "downloads": 7200000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 28 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 170 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (12).webp",
+    "title": "Task Master: ToDo & Planner",
+    "companyName": "Productivity Co.",
+    "id": 12,
+    "description": "Task Master is a powerful task management app that allows you to organize, prioritize, and track tasks to achieve your daily and long-term goals effectively.",
+    "size": 45,
+    "reviews": 380,
+    "ratingAvg": 4.5,
+    "downloads": 7000000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 35 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 140 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (13).webp",
+    "title": "Daily Planner: Organize Your Day",
+    "companyName": "PlanIt Apps",
+    "id": 13,
+    "description": "Daily Planner helps you structure your day with tasks, events, and reminders. Boost productivity and maintain balance between work, study, and personal life.",
+    "size": 42,
+    "reviews": 350,
+    "ratingAvg": 4.4,
+    "downloads": 6800000,
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 160 },
+      { "name": "5 star", "count": 140 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (14).webp",
+    "title": "Focus Light: Study & Work Timer",
+    "companyName": "BrightApps",
+    "id": 14,
+    "description": "Focus Light provides a timer and task tracker for study and work sessions. Use it to reduce procrastination and maintain consistent focus throughout your day.",
+    "size": 38,
+    "reviews": 330,
+    "ratingAvg": 4.5,
+    "downloads": 6400000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 160 },
+      { "name": "5 star", "count": 127 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (15).webp",
+    "title": "Productive Habits: Build Your Routine",
+    "companyName": "HabitLab",
+    "id": 15,
+    "description": "Productive Habits helps you form positive routines and break bad ones. Track daily activities, stay motivated, and see measurable progress over time.",
+    "size": 37,
+    "reviews": 310,
+    "ratingAvg": 4.3,
+    "downloads": 6000000,
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 160 },
+      { "name": "5 star", "count": 107 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (16).webp",
+    "title": "Sleep Well: Smart Sleep Tracker",
+    "companyName": "HealthTech",
+    "id": 16,
+    "description": "Sleep Well tracks your sleep patterns, provides insights, and helps you improve sleep quality. Set alarms and bedtime reminders to maintain a healthy sleep schedule.",
+    "size": 45,
+    "reviews": 400,
+    "ratingAvg": 4.5,
+    "downloads": 7100000,
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 35 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 165 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (17).webp",
+    "title": "Focus Mind: Meditation & Work",
+    "companyName": "MindApps",
+    "id": 17,
+    "description": "Focus Mind combines meditation techniques with focus timers to enhance concentration and reduce stress. Improve mental clarity and productivity daily.",
+    "size": 40,
+    "reviews": 380,
+    "ratingAvg": 4.4,
+    "downloads": 6900000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 28 },
+      { "name": "4 star", "count": 160 },
+      { "name": "5 star", "count": 124 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (18).webp",
+    "title": "Goal Tracker: Achieve Your Dreams",
+    "companyName": "LifeGoal Apps",
+    "id": 18,
+    "description": "Goal Tracker helps you set, monitor, and achieve personal and professional goals. Visualize progress, stay motivated, and accomplish milestones effectively.",
+    "size": 43,
+    "reviews": 360,
+    "ratingAvg": 4.5,
+    "downloads": 6600000,
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 7 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 160 },
+      { "name": "5 star", "count": 141 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (19).webp",
+    "title": "Task Tiger: Ultimate Productivity",
+    "companyName": "Tiger Apps",
+    "id": 19,
+    "description": "Task Tiger is an all-in-one productivity app to manage tasks, reminders, and schedules. Prioritize efficiently and achieve your goals faster with smart tracking features.",
+    "size": 46,
+    "reviews": 340,
+    "ratingAvg": 4.4,
+    "downloads": 6400000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 160 },
+      { "name": "5 star", "count": 137 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app (20).webp",
+    "title": "Study Genie: Focus & Planner",
+    "companyName": "EduGenie",
+    "id": 20,
+    "description": "Study Genie is a study-focused app with timers, task planners, and progress tracking. Improve learning efficiency, manage assignments, and maintain a productive study routine.",
+    "size": 39,
+    "reviews": 320,
+    "ratingAvg": 4.5,
+    "downloads": 6200000,
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 7 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 160 },
+      { "name": "5 star", "count": 120 }
+    ]
+  }
+]
