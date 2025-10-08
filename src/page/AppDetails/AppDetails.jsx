@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData, useParams, useNavigate } from "react-router-dom";
 import erroImg from "../../assets/App-Error.png";
-
+import BChart from "../BChart/BChart";
+import { addToStore, installBtn } from "../../Utility/Utility";
 const AppDetails = () => {
   const { id } = useParams();
   const data = useLoaderData();
   const navigate = useNavigate();
-
+  const handleinstallBtn = (id) => {
+    addToStore(id);
+    setIsInstalled(true);
+  };
   const singleApp = data.find((app) => app.id === Number(id));
-
+  const [isInstalled, setIsInstalled] = useState(singleApp ? installBtn(singleApp.id) : false);
   if (!singleApp) {
     return (
       <main className="flex flex-col items-center justify-center flex-grow bg-gray-100 text-center px-4 py-16 md:py-24 lg:py-32">
@@ -32,47 +36,64 @@ const AppDetails = () => {
       </main>
     );
   }
-
   return (
-    <div className="max-w-[1200px] mx-auto bg-white rounded-xl shadow-md p-4 sm:p-6 flex flex-col md:flex-row gap-6 items-center md:items-start pt-10">
-      <div className="w-28 h-28 flex-shrink-0">
-        <img
-          src={singleApp.image}
-          alt={singleApp.title}
-          className="w-full h-full object-contain rounded-lg border"
-        />
-      </div>
-      <div className="flex-1 space-y-4 text-center md:text-left">
-        <h1 className="text-2xl font-bold">{singleApp.title}</h1>
-        <p className="text-gray-500 text-sm">
-          Developed by{" "}
-          <span className="text-blue-600 font-medium cursor-pointer hover:underline">
-            {singleApp.companyName}
-          </span>
-        </p>
-        <div className="flex flex-wrap justify-center md:justify-start gap-8 text-center">
-          <div>
-            <span className="text-2xl">⬇️</span>
-            <p className="font-bold text-lg">
-              {(singleApp.downloads / 1000000).toFixed(1)}M
-            </p>
-            <p className="text-sm text-gray-500">Downloads</p>
-          </div>
-          <div>
-            <span className="text-2xl">⭐</span>
-            <p className="font-bold text-lg">{singleApp.ratingAvg}</p>
-            <p className="text-sm text-gray-500">Avg. Rating</p>
-          </div>
-          <div>
-            <span className="text-2xl">💬</span>
-            <p className="font-bold text-lg">{singleApp.reviews}</p>
-            <p className="text-sm text-gray-500">Reviews</p>
-          </div>
+    <div className="max-w-[1200px] mx-auto bg-white rounded-2xl shadow-xl p-8 sm:p-12 space-y-10 pt-16">
+      <div className="flex flex-col md:flex-row gap-10 items-center md:items-start">
+        <div className="w-40 h-40 sm:w-48 sm:h-48 flex-shrink-0">
+          <img
+            src={singleApp.image}
+            alt={singleApp.title}
+            className="w-full h-full object-contain rounded-xl border-2 border-gray-200"
+          />
         </div>
-        <button className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-semibold px-5 py-2 rounded-md transition">
-          Install Now ({singleApp.size} MB)
-        </button>
+        <div className="flex-1 space-y-6 text-center md:text-left">
+          <h1 className="text-3xl sm:text-4xl font-extrabold">
+            {singleApp.title}
+          </h1>
+          <p className="text-gray-600 text-lg sm:text-xl">
+            Developed by{" "}
+            <span className="text-blue-600 font-semibold cursor-pointer hover:underline">
+              {singleApp.companyName}
+            </span>
+          </p>
+          <div className="flex flex-wrap justify-center md:justify-start gap-10 text-center">
+            <div>
+              <span className="text-3xl sm:text-4xl">⬇️</span>
+              <p className="font-bold text-xl sm:text-2xl">
+                {(singleApp.downloads / 1000000).toFixed(1)}M
+              </p>
+              <p className="text-sm sm:text-base text-gray-500">Downloads</p>
+            </div>
+            <div>
+              <span className="text-3xl sm:text-4xl">⭐</span>
+              <p className="font-bold text-xl sm:text-2xl">
+                {singleApp.ratingAvg}
+              </p>
+              <p className="text-sm sm:text-base text-gray-500">Avg. Rating</p>
+            </div>
+            <div>
+              <span className="text-3xl sm:text-4xl">💬</span>
+              <p className="font-bold text-xl sm:text-2xl">
+                {singleApp.reviews}
+              </p>
+              <p className="text-sm sm:text-base text-gray-500">Reviews</p>
+            </div>
+          </div>
+          <button
+            onClick={() => handleinstallBtn(singleApp.id)}
+            className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-semibold text-lg sm:text-xl px-8 py-4 rounded-xl transition transform hover:scale-105"
+          >
+            {isInstalled ? "Installed" : `Install Now ${singleApp.size} MB`}
+          </button>
+        </div>
       </div>
+      <div className="w-full">
+        <BChart singleApp={singleApp.ratings} />
+      </div>
+      <h1 className="text-3xl sm:text-4xl font-extrabold">Description</h1>
+      <p className="text-gray-600 text-lg sm:text-xl">
+        {singleApp.description}
+      </p>
     </div>
   );
 };
