@@ -1,6 +1,6 @@
 [
   {
-    "image": "/src/assets/demo-app (1).webp",
+    "image": "/demo-app-1.webp",
     "title": "Forest: Focus For Productivity",
     "companyName": "Forest Inc.",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (2).webp",
+    "image": "/demo-app-2.webp",
     "title": "SmPlan: ToDo List With Reminder",
     "companyName": "SmPlan Inc.",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (3).webp",
+    "image": "/demo-app-3.webp",
     "title": "FLIP - Focus Timer For Study",
     "companyName": "FLIP Inc.",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (4).webp",
+    "image": "/demo-app-4.webp",
     "title": "Pomocat - Cute Pomodoro Timer",
     "companyName": "Pomocat Co.",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (5).webp",
+    "image": "/demo-app-5.webp",
     "title": "Time Planner: Schedule & Tasks",
     "companyName": "Planner Apps",
     "id": 5,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (6).webp",
+    "image": "/demo-app-6.webp",
     "title": "Morning Habits - Daily Routine",
     "companyName": "Habit Co.",
     "id": 6,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (7).webp",
+    "image": "/demo-app-1.webp",
     "title": "Focus Plant: Pomodoro Forest",
     "companyName": "Focus Co.",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (8).webp",
+    "image": "/demo-app-2.webp",
     "title": "Alarmy - Alarm Clock & Sleep",
     "companyName": "Alarmy Inc.",
     "id": 8,
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (9).webp",
+    "image": "/demo-app-3.webp",
     "title": "Habit Tracker: Build Good Habits",
     "companyName": "LifeApps",
     "id": 9,
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (10).webp",
+    "image": "/demo-app-4.webp",
     "title": "Study Buddy: Focus & Timer",
     "companyName": "EduApps",
     "id": 10,
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (11).webp",
+    "image": "/demo-app-5.webp",
     "title": "Focus Zen: Mindfulness & Focus",
     "companyName": "ZenTech",
     "id": 11,
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (12).webp",
+    "image": "/demo-app-6.webp",
     "title": "Task Master: ToDo & Planner",
     "companyName": "Productivity Co.",
     "id": 12,
@@ -216,7 +216,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (13).webp",
+    "image": "/demo-app-1.webp",
     "title": "Daily Planner: Organize Your Day",
     "companyName": "PlanIt Apps",
     "id": 13,
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (14).webp",
+    "image": "/demo-app-2.webp",
     "title": "Focus Light: Study & Work Timer",
     "companyName": "BrightApps",
     "id": 14,
@@ -252,7 +252,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (15).webp",
+    "image": "/demo-app-3.webp",
     "title": "Productive Habits: Build Your Routine",
     "companyName": "HabitLab",
     "id": 15,
@@ -270,7 +270,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (16).webp",
+    "image": "/demo-app-4.webp",
     "title": "Sleep Well: Smart Sleep Tracker",
     "companyName": "HealthTech",
     "id": 16,
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (17).webp",
+    "image": "/demo-app-5.webp",
     "title": "Focus Mind: Meditation & Work",
     "companyName": "MindApps",
     "id": 17,
@@ -306,7 +306,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (18).webp",
+    "image": "/demo-app-6.webp",
     "title": "Goal Tracker: Achieve Your Dreams",
     "companyName": "LifeGoal Apps",
     "id": 18,
@@ -324,7 +324,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (19).webp",
+    "image": "/demo-app-1.webp",
     "title": "Task Tiger: Ultimate Productivity",
     "companyName": "Tiger Apps",
     "id": 19,
@@ -342,7 +342,7 @@
     ]
   },
   {
-    "image": "/src/assets/demo-app (20).webp",
+    "image": "/demo-app-2.webp",
     "title": "Study Genie: Focus & Planner",
     "companyName": "EduGenie",
     "id": 20,

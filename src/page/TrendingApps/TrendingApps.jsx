@@ -1,5 +1,6 @@
-import React from 'react';
-import TrendingApp from '../TrendingApp/TrendingApp';
+import React from "react";
+import TrendingApp from "../TrendingApp/TrendingApp";
+import { Link } from "react-router";
 
 const TrendingApps = ({ data }) => {
   return (
@@ -13,6 +14,14 @@ const TrendingApps = ({ data }) => {
         {data.map((card) => (
           <TrendingApp key={card.id} card={card} />
         ))}
+      </div>
+
+      <div className="flex justify-center mt-6">
+        <Link to='/apps'>
+          <button className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white">
+            Show all
+          </button>
+        </Link>
       </div>
     </div>
   );
