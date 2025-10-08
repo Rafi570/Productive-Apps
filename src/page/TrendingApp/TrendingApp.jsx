@@ -1,10 +1,12 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa";
 import { FcRating } from "react-icons/fc";
+import { Link } from "react-router";
 
 const TrendingApp = ({ card }) => {
   return (
-    <div
+    <Link to={`/appDetails/${card.id}`}>
+        <div
       className="border border-gray-300 p-4 w-64 rounded-lg shadow-sm bg-white 
                     hover:-translate-y-2 hover:shadow-lg transition-transform duration-300 ease-in-out flex flex-col justify-between"
     >
@@ -36,6 +38,11 @@ const TrendingApp = ({ card }) => {
         </div>
       </div>
     </div>
+    
+    
+    
+    </Link>
+
   );
 };
 
