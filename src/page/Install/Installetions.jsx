@@ -43,11 +43,12 @@ const Installations = () => {
     }
     if (type === "ratingAvg") {
       const sortedByRating = [...installList].sort(
-        (a, b) => b.ratingAvg - a.ratingAvg
+        (a, b) => parseFloat(b.ratingAvg) - parseFloat(a.ratingAvg)
       );
       setInstallList(sortedByRating);
     }
   };
+  // console.log(sort)
 
   return (
     <div className="max-w-[1200px] mx-auto p-4 sm:p-10">

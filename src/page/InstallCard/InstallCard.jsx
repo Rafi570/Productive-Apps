@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { removeLocalData, getStoreDb } from '../../Utility/Utility';
+// import { removeLocalData, getStoreDb } from '../../Utility/Utility';
 
 const InstallCard = ({ app, onUninstall }) => {
   // useEffect(()=>{window.scrollTo(0,0)},[])
@@ -22,7 +22,7 @@ const InstallCard = ({ app, onUninstall }) => {
               ⬇️ {app.downloads}M
             </span>
             <span className="flex items-center gap-1 text-yellow-500">
-              ⭐ {app.rating}
+              ⭐ {app.ratingAvg}
             </span>
             <span>{app.size} MB</span>
           </div>
