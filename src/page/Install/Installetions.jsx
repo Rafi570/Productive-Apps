@@ -2,11 +2,15 @@ import React, { useEffect, useState } from "react";
 import InstallCard from "../InstallCard/InstallCard";
 import { useLoaderData } from "react-router";
 import { getStoreDb, removeLocalData } from "../../Utility/Utility";
+import Swal from 'sweetalert2'
 
+// or via CommonJS
+// const Swal = require('sweetalert2')
 const Installations = () => {
   const data = useLoaderData();
   const [installList, setInstallList] = useState([]);
   const [sort, setSort] = useState("");
+  // useEffect(()=>{window.scrollTo(0,0)},[])
 
   useEffect(() => {
     const storeAppData = getStoreDb();
@@ -22,19 +26,24 @@ const Installations = () => {
   const handleUninstall = (id) => {
     removeLocalData(id);
     setInstallList((prev) => prev.filter((app) => app.id !== id));
+    Swal.fire({
+      title: "Uninstall SuccessFully",
+      icon: "success",
+      draggable: true,
+    });
   };
 
   const handleSort = (type) => {
     setSort(type);
     if (type === "downloads") {
       const sortedByDownload = [...installList].sort(
-        (a, b) => b.downloads - a.downloads 
+        (a, b) => b.downloads - a.downloads
       );
       setInstallList(sortedByDownload);
     }
     if (type === "ratingAvg") {
       const sortedByRating = [...installList].sort(
-        (a, b) => b.ratingAvg - a.ratingAvg 
+        (a, b) => b.ratingAvg - a.ratingAvg
       );
       setInstallList(sortedByRating);
     }
@@ -47,25 +56,24 @@ const Installations = () => {
           ({installList.length}) Apps Found
         </p>
 
-        
-<div className="dropdown dropdown-end w-full sm:w-auto">
-  <button tabIndex={0} className="btn w-full sm:w-auto">
-    Sort by: {sort ? sort : "Select"}
-  </button>
-  <ul
-    tabIndex={0}
-    className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-full sm:w-52 mt-1"
-  >
-    <li>
-      <button onClick={() => handleSort("ratingAvg")}>Average Ratings</button>
-    </li>
-    <li>
-      <button onClick={() => handleSort("downloads")}>Downloads</button>
-    </li>
-  </ul>
-</div>
-
-
+        <div className="dropdown dropdown-end w-full sm:w-auto">
+          <button tabIndex={0} className="btn w-full sm:w-auto">
+            Sort by: {sort ? sort : "Select"}
+          </button>
+          <ul
+            tabIndex={0}
+            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-full sm:w-52 mt-1"
+          >
+            <li>
+              <button onClick={() => handleSort("ratingAvg")}>
+                Average Ratings
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleSort("downloads")}>Downloads</button>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div className="flex flex-col gap-4">

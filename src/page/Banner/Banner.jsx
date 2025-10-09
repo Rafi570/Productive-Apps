@@ -20,14 +20,26 @@ const Banner = () => {
           into digital experiences that truly make an impact.
         </p>
         <div className="flex justify-center gap-4 mt-4 sm:mt-6 flex-wrap">
-          <button className="btn flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-3 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white">
-            <IoLogoGooglePlaystore size={20} />
-            Play Store
-          </button>
-          <button className="btn flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-3 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white">
-            <IoLogoAppleAppstore size={20} />
-            App Center
-          </button>
+          <a
+            href="https://play.google.com/store/games?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-3 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white">
+              <IoLogoGooglePlaystore size={20} />
+              Play Store
+            </button>
+          </a>
+          <a
+            href="https://www.apple.com/store"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-3 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white">
+              <IoLogoAppleAppstore size={20} />
+              App Center
+            </button>
+          </a>
         </div>
         <div className="mt-6 sm:mt-8 flex justify-center">
           <img
