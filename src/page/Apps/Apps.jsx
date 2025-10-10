@@ -1,24 +1,23 @@
 import React, { useEffect, useState } from "react";
 import DisplayAppsContainer from "../DisplayAppsContainer/DisplayAppsContainer";
-import DataFound from "../../DataFound/DataFound";
+
 const Apps = () => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const trim = search.trim().toLocaleLowerCase();
-  const handleChange = (val) => {
 
+  const handleChange = (val) => {
     setSearch(val);
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    });
+    }, 500);
   };
 
   const searchApp = trim
     ? data.filter((dt) => dt.title.toLocaleLowerCase().includes(trim))
     : data;
-
 
   useEffect(() => {
     fetch("/appsData.json")
@@ -30,23 +29,13 @@ const Apps = () => {
   }, []);
 
   return (
-    <div>
-      {loading ? (
-        <div className="flex justify-center items-center h-96">
-          <div className="w-32 h-32 border-8 border-gray-300 border-t-purple-500 rounded-full animate-spin"></div>
-        </div>
-      ) : searchApp.length === 0 ? (
-        <DataFound></DataFound>
-      ) : (
-        <DisplayAppsContainer
-          handleChange={handleChange}
-          searchApp={searchApp}
-          search={search}
-          setSearch={setSearch}
-          data={data}
-        ></DisplayAppsContainer>
-      )}
-    </div>
+    <DisplayAppsContainer
+      handleChange={handleChange}
+      searchApp={searchApp}
+      search={search}
+      setSearch={setSearch}
+      loading={loading}
+    />
   );
 };
 

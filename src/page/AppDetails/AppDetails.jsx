@@ -12,7 +12,9 @@ const AppDetails = () => {
     setIsInstalled(true);
   };
   const singleApp = data.find((app) => app.id === Number(id));
-  const [isInstalled, setIsInstalled] = useState(singleApp ? installBtn(singleApp.id) : false);
+  const [isInstalled, setIsInstalled] = useState(
+    singleApp ? installBtn(singleApp.id) : false
+  );
   if (!singleApp) {
     return (
       <main className="flex flex-col items-center justify-center flex-grow bg-gray-100 text-center px-4 py-16 md:py-24 lg:py-32">
@@ -80,10 +82,17 @@ const AppDetails = () => {
             </div>
           </div>
           <button
+            disabled={isInstalled}
             onClick={() => handleinstallBtn(singleApp.id)}
-            className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-semibold text-lg sm:text-xl px-8 py-4 rounded-xl transition transform hover:scale-105"
+            className={`w-full sm:w-auto text-white font-semibold text-lg sm:text-xl px-8 py-4 rounded-xl transition transform 
+    ${
+      isInstalled
+        ? "bg-gray-400 cursor-not-allowed opacity-70"
+        : "bg-green-600 hover:bg-green-700 hover:scale-105"
+    }
+  `}
           >
-            {isInstalled ? "Installed" : `Install Now ${singleApp.size} MB`}
+            {isInstalled ? `Installed` : `Install Now ${singleApp.size} MB`}
           </button>
         </div>
       </div>

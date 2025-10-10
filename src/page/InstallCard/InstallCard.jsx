@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 // import { removeLocalData, getStoreDb } from '../../Utility/Utility';
 
 const InstallCard = ({ app, onUninstall }) => {
-  // useEffect(()=>{window.scrollTo(0,0)},[])
+
 
 
   return (
